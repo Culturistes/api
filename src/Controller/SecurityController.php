@@ -21,6 +21,10 @@ class SecurityController extends AbstractController
             // parameters usually defined in Symfony login forms
             'error' => $error,
             'last_username' => $lastUsername,
+            'page_title' => 'Les culturistes en vadrouille autour de la France',
+            'username_label' => 'Le pôti pseudo',
+            'password_label' => 'Et li piti mot de passe !',
+            'sign_in_label' => 'Let\'s go !!!',
             'target_path' => $this->generateUrl('admin')
         ]);
     }
