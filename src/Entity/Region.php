@@ -2,15 +2,15 @@
 
 namespace App\Entity;
 
-use App\Repository\MinigameRepository;
+use App\Repository\RegionRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=MinigameRepository::class)
+ * @ORM\Entity(repositoryClass=RegionRepository::class)
  */
-class Minigame
+class Region
 {
     /**
      * @ORM\Id
@@ -27,25 +27,21 @@ class Minigame
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $title;
+    private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=Question::class, mappedBy="minigame")
+     * @ORM\OneToMany(targetEntity=Question::class, mappedBy="region")
      */
     private $questions;
-
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $active = true;
 
     public function __construct()
     {
         $this->questions = new ArrayCollection();
     }
 
-    public function __toString() {
-        return $this->title;
+    public function __toString()
+    {
+        return $this->name;
     }
 
     public function getId(): ?int
@@ -65,14 +61,14 @@ class Minigame
         return $this;
     }
 
-    public function getTitle(): ?string
+    public function getName(): ?string
     {
-        return $this->title;
+        return $this->name;
     }
 
-    public function setTitle(?string $title): self
+    public function setName(?string $name): self
     {
-        $this->title = $title;
+        $this->name = $name;
 
         return $this;
     }
@@ -89,7 +85,7 @@ class Minigame
     {
         if (!$this->questions->contains($question)) {
             $this->questions[] = $question;
-            $question->setMinigame($this);
+            $question->setRegion($this);
         }
 
         return $this;
@@ -99,22 +95,10 @@ class Minigame
     {
         if ($this->questions->removeElement($question)) {
             // set the owning side to null (unless already changed)
-            if ($question->getMinigame() === $this) {
-                $question->setMinigame(null);
+            if ($question->getRegion() === $this) {
+                $question->setRegion(null);
             }
         }
-
-        return $this;
-    }
-
-    public function getActive(): ?bool
-    {
-        return $this->active;
-    }
-
-    public function setActive(bool $active): self
-    {
-        $this->active = $active;
 
         return $this;
     }
