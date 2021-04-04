@@ -23,9 +23,9 @@ class DateService
                     
             // Récupération de paques. Permet ensuite d'obtenir le jour de l'ascension et celui de la pentecote	
             // $easter = easter_date($year);
-            // $arr_bank_holidays[] = date('j_n_'.$year, $easter + 86400); // Paques
-            // $arr_bank_holidays[] = date('j_n_'.$year, $easter + (86400*39)); // Ascension
-            // $arr_bank_holidays[] = date('j_n_'.$year, $easter + (86400*50)); // Pentecote	
+            $arr_bank_holidays[] = date('5_4_'.$year); // Paques
+            $arr_bank_holidays[] = date('13_5_'.$year); // Ascension
+            $arr_bank_holidays[] = date('23_5_'.$year); // Pentecote	
         }
         //print_r($arr_bank_holidays);
         $nb_days_open = 0;
