@@ -5,6 +5,8 @@ namespace App\Controller\Admin;
 use App\Entity\User;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 
 class UserCrudController extends AbstractCrudController
 {
@@ -13,12 +15,15 @@ class UserCrudController extends AbstractCrudController
         return User::class;
     }
 
-    public function configureCrud(Crud $crud): Crud
-{
-    return $crud
-        ->setEntityPermission('ROLE_REMI')
-    ;
-}
+    public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+            // ...
+            ->setPermission(Action::NEW, 'ROLE_REMI')
+            ->setPermission(Action::EDIT, 'ROLE_REMI')
+            ->setPermission(Action::DELETE, 'ROLE_REMI')
+        ;
+    }
 
     /*
     public function configureFields(string $pageName): iterable
