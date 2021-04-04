@@ -35,7 +35,7 @@ class QuestionCrudController extends AbstractCrudController
             Field::new('answers')->setLabel('Réponses')->setHelp('(mettez un $ devant la ou les bonnes réponses)'),
             AssociationField::new('minigame')->setLabel('Epreuve'),
             AssociationField::new('region')->setLabel('Region associée'),
-            Field::new('active'),
+            Field::new('active')->setHelp('Permet de désactiver une question, décocher pour l\'empêcher d\'apparaitre dans le jeu sans la supprimer'),
             AssociationField::new('creator')->hideOnForm(),
             Field::new('createdAt')->hideOnForm(),
             AssociationField::new('lastUpdater')->hideOnForm(),
