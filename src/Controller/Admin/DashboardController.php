@@ -13,6 +13,8 @@ use App\Entity\Region;
 use App\Entity\Minigame;
 use App\Entity\Question;
 
+use App\Service\DateService;
+
 use App\Controller\Admin\RegionCrudController;
 
 use Symfony\Component\Security\Core\Security;
@@ -20,10 +22,12 @@ use Symfony\Component\Security\Core\Security;
 class DashboardController extends AbstractDashboardController
 {
     private $security;
+    private $dateService;
 
-    public function __construct(Security $security)
+    public function __construct(Security $security, DateService $dateService)
     {
         $this->security = $security;
+        $this->dateService = $dateService;
     }
 
     /**
@@ -31,12 +35,11 @@ class DashboardController extends AbstractDashboardController
      */
     public function index(): Response
     {
-        //return parent::index();
-
-        $routeBuilder = $this->get(AdminUrlGenerator::class);
 
         return $this->render('admin/dashboard.html.twig', [
-            'user' => $this->getUser()
+            'user' => $this->getUser(),
+            'dates' => $this->dateService->getDates(),
+
         ]);
     }
 

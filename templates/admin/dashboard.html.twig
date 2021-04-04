@@ -4,4 +4,22 @@
 
 {% block page_content %}
     <h2>Hello {{user.username}}</h2>
+
+    <br>
+    <h3>Dates importantes</h3>
+    <dl class="datalist">
+        {% for date in dates %}
+        <div class="data-row  field-text">
+            <dd>
+                {{date.name}}<br>{{date.date}}
+            </dd>
+            <dt>
+                <span>
+                Reste {{date.day_left}} jours d'école
+                </span>
+            </dt>
+        </div>
+        {% endfor %}
+    </dl>
+    
 {% endblock %}
