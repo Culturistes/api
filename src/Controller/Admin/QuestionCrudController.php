@@ -6,6 +6,7 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use App\Entity\Question;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\Field;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ImageField;
@@ -24,6 +25,13 @@ class QuestionCrudController extends AbstractCrudController
     public static function getEntityFqcn(): string
     {
         return Question::class;
+    }
+
+    public function configureCrud(Crud $crud): Crud
+    {
+        return $crud
+                ->setDefaultSort(['createdAt' => 'DESC'])
+        ;
     }
 
     public function configureFields(string $pageName): iterable
