@@ -48,6 +48,7 @@ class QuestionCrudController extends AbstractCrudController
         return $filters
             ->add('title')
             ->add('minigame')
+            ->add('active')
             ->add('region')
         ;
     }
