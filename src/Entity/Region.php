@@ -30,7 +30,7 @@ class Region
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity=Question::class, mappedBy="region")
+     * @ORM\ManyToMany(targetEntity=Question::class, mappedBy="region")
      */
     private $questions;
 
@@ -81,23 +81,20 @@ class Region
         return $this->questions;
     }
 
-    public function addQuestion(Question $question): self
+    public function addQuestions(Question $questions): self
     {
-        if (!$this->questions->contains($question)) {
-            $this->questions[] = $question;
-            $question->setRegion($this);
+        if (!$this->questions->contains($questions)) {
+            $this->questions[] = $questions;
+            $questions->addRegion($this);
         }
 
         return $this;
     }
 
-    public function removeQuestion(Question $question): self
+    public function removeQuestions(Question $questions): self
     {
-        if ($this->questions->removeElement($question)) {
-            // set the owning side to null (unless already changed)
-            if ($question->getRegion() === $this) {
-                $question->setRegion(null);
-            }
+        if ($this->questions->removeElement($questions)) {
+            $questions->removeRegion($this);
         }
 
         return $this;
