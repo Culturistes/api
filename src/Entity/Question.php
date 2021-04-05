@@ -256,4 +256,12 @@ class Question
 
         return $this;
     }
+
+    public function getRegionName() {
+        $regions = array();
+        foreach ($this->region as $value) {
+            $regions[] = $value->getName();
+        }
+        return implode(",", $regions);
+    }
 }
