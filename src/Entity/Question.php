@@ -54,7 +54,7 @@ class Question
     private $minigame;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Region::class, inversedBy="questions_2")
+     * @ORM\ManyToMany(targetEntity=Region::class, inversedBy="questions")
      */
     private $region;
 
