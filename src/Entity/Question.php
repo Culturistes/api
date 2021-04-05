@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\QuestionRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 use Symfony\Component\HttpFoundation\File\File;
@@ -52,7 +54,7 @@ class Question
     private $minigame;
 
     /**
-     * @ORM\ManyToOne(targetEntity=Region::class, inversedBy="questions")
+     * @ORM\ManyToMany(targetEntity=Region::class, inversedBy="questions_2")
      */
     private $region;
 
@@ -80,6 +82,11 @@ class Question
      * @ORM\ManyToOne(targetEntity=User::class, inversedBy="updatedQuestions")
      */
     private $lastUpdater;
+
+    public function __construct()
+    {
+        $this->region = new ArrayCollection();
+    }
 
     public function __toString() {
         if ($this->title !== null) {
@@ -166,14 +173,26 @@ class Question
         return $this;
     }
 
-    public function getRegion(): ?Region
+    /**
+     * @return Collection|Region[]
+     */
+    public function getRegion(): Collection
     {
         return $this->region;
     }
 
-    public function setRegion(?Region $region): self
+    public function addRegion(Region $region): self
     {
-        $this->region = $region;
+        if (!$this->region->contains($region)) {
+            $this->region[] = $region;
+        }
+
+        return $this;
+    }
+
+    public function removeRegion(Region $region): self
+    {
+        $this->region->removeElement($region);
 
         return $this;
     }
