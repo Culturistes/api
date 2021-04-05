@@ -6,6 +6,8 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use App\Entity\Question;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Assets;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\Field;
@@ -40,15 +42,16 @@ class QuestionCrudController extends AbstractCrudController
             Field::new('title')->setLabel('La question'),
             VichImageField::new('imageFile')->onlyOnForms(),
             ImageField::new('image')->hideOnForm()->setBasePath($this->params->get('app.path.question_images')),
-            Field::new('answers')->setLabel('Réponses')->setHelp('(mettez un $ devant la ou les bonnes réponses)'),
+            Field::new('answers')->setLabel('Réponses')->setHelp('(mettez un $ devant la ou les bonnes réponses. Pas besoin pour les questions de types "La majorité l\'emporte")')->hideOnIndex(),
+            Field::new('answerSetted')->setLabel('$ setted')->hideOnForm(),
             AssociationField::new('minigame')->setLabel('Epreuve'),
             AssociationField::new('region')->setLabel('Region associée')->onlyOnForms(),
             Field::new('RegionName')->setLabel('Region associée')->hideOnForm(),
             Field::new('active')->setHelp('Permet de désactiver une question, décocher pour l\'empêcher d\'apparaitre dans le jeu sans la supprimer'),
-            AssociationField::new('creator')->hideOnForm(),
-            Field::new('createdAt')->hideOnForm(),
-            AssociationField::new('lastUpdater')->hideOnForm(),
-            Field::new('updatedAt')->hideOnForm(),
+            AssociationField::new('creator')->hideOnForm()->hideOnIndex(),
+            Field::new('createdAt')->hideOnForm()->hideOnIndex(),
+            AssociationField::new('lastUpdater')->hideOnForm()->hideOnIndex(),
+            Field::new('updatedAt')->hideOnForm()->hideOnIndex(),
         ];
     }
 
@@ -59,6 +62,14 @@ class QuestionCrudController extends AbstractCrudController
             ->add('minigame')
             ->add('active')
             ->add('region')
+        ;
+    }
+
+    public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+            // ...
+            ->add(Crud::PAGE_INDEX, Action::DETAIL)
         ;
     }
 

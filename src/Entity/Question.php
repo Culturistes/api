@@ -264,4 +264,21 @@ class Question
         }
         return implode(",", $regions);
     }
+
+    public function getAnswerSetted() {
+        if ($this->minigame->getTag() == 'quiz') {
+            $answers = $this->answers;
+            $answerSetted = false;
+    
+            foreach ($answers as $value) {
+                if (substr($value, 0, 1) == '$' && !$answerSetted) {
+                    $answerSetted = true;
+                }
+            }
+    
+            return $answerSetted ? 'Oui' : '/!\ ATTENTION, AUCUNE BONNE REPONSE SIGNALEE';
+        }
+
+        return 'Oui';
+    }
 }
