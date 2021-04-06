@@ -41,7 +41,7 @@ class RegionCrudController extends AbstractCrudController
         }
         //$configureFileds[] = AssociationField::new('questions')->hideOnForm();
         $configureFileds[] = Field::new('nbrQuiz')->setLabel('Quiz')->hideOnForm();
-        $configureFileds[] = Field::new('nbrLml')->setLabel('La majorité l\'emporte')->hideOnForm();
+        $configureFileds[] = Field::new('nbrLme')->setLabel('La majorité l\'emporte')->hideOnForm();
 
         return $configureFileds;
     }

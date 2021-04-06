@@ -110,10 +110,10 @@ class Region
         return $val;
     }
 
-    public function getNbrLml() {
+    public function getNbrLme() {
         $val = 0;
         foreach ($this->questions as $value) {
-            if ($value->getMinigame()->getTag() == 'lml') {
+            if ($value->getMinigame()->getTag() == 'lme') {
                 $val++;
             }
         }
