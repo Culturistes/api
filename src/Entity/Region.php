@@ -99,4 +99,24 @@ class Region
 
         return $this;
     }
+
+    public function getNbrQuiz() {
+        $val = 0;
+        foreach ($this->questions as $value) {
+            if ($value->getMinigame()->getTag() == 'quiz') {
+                $val++;
+            }
+        }
+        return $val;
+    }
+
+    public function getNbrLml() {
+        $val = 0;
+        foreach ($this->questions as $value) {
+            if ($value->getMinigame()->getTag() == 'lml') {
+                $val++;
+            }
+        }
+        return $val;
+    }
 }

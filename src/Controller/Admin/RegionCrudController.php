@@ -38,10 +38,10 @@ class RegionCrudController extends AbstractCrudController
         $configureFileds[] = TextField::new('name')->setLabel('Nom');
         if ($this->isGranted('ROLE_DEV')) {
             $configureFileds[] = TextField::new('tag')->setHelp('Pour les dév seulement : un identifiant de trois lettres unique par rapport aux autres sans accent ni caractères spéciaux ni majuscules..');
-        } else {
-
         }
-        $configureFileds[] = AssociationField::new('questions')->hideOnForm();
+        //$configureFileds[] = AssociationField::new('questions')->hideOnForm();
+        $configureFileds[] = Field::new('nbrQuiz')->setLabel('Quiz')->hideOnForm();
+        $configureFileds[] = Field::new('nbrLml')->setLabel('La majorité l\'emporte')->hideOnForm();
 
         return $configureFileds;
     }
