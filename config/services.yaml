@@ -35,3 +35,8 @@ services:
         tags:
             - { name: 'doctrine.orm.entity_listener', event: 'prePersist', entity: 'App\Entity\Question'}
             - { name: 'doctrine.orm.entity_listener', event: 'preUpdate', entity: 'App\Entity\Question'}
+
+    App\EntityListener\FunCityNameListener:
+        tags:
+            - { name: 'doctrine.orm.entity_listener', event: 'prePersist', entity: 'App\Entity\FunCityName'}
+            - { name: 'doctrine.orm.entity_listener', event: 'preUpdate', entity: 'App\Entity\FunCityName'}

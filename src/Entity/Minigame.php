@@ -39,9 +39,15 @@ class Minigame
      */
     private $active = true;
 
+    /**
+     * @ORM\OneToMany(targetEntity=FunCityName::class, mappedBy="minigame")
+     */
+    private $funCityNames;
+
     public function __construct()
     {
         $this->questions = new ArrayCollection();
+        $this->funCityNames = new ArrayCollection();
     }
 
     public function __toString() {
@@ -115,6 +121,36 @@ class Minigame
     public function setActive(bool $active): self
     {
         $this->active = $active;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|FunCityName[]
+     */
+    public function getFunCityNames(): Collection
+    {
+        return $this->funCityNames;
+    }
+
+    public function addFunCityName(FunCityName $funCityName): self
+    {
+        if (!$this->funCityNames->contains($funCityName)) {
+            $this->funCityNames[] = $funCityName;
+            $funCityName->setMinigame($this);
+        }
+
+        return $this;
+    }
+
+    public function removeFunCityName(FunCityName $funCityName): self
+    {
+        if ($this->funCityNames->removeElement($funCityName)) {
+            // set the owning side to null (unless already changed)
+            if ($funCityName->getMinigame() === $this) {
+                $funCityName->setMinigame(null);
+            }
+        }
 
         return $this;
     }

@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\FunCityNameRepository;
+use App\Repository\MinigameRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -67,6 +68,11 @@ class FunCityName
      */
     private $regions;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Minigame::class, inversedBy="funCityNames")
+     */
+    private $minigame;
+
     public function __construct()
     {
         $this->regions = new ArrayCollection();
@@ -80,16 +86,18 @@ class FunCityName
         return '(vide)';
     }
 
-    public function prePersist(Security $security): void
+    public function prePersist(Security $security, MinigameRepository $minigameRepository): void
     {
         $this->createdAt = new \DateTimeImmutable();
         $this->creator = $security->getUser();
+        $this->minigame = $minigameRepository->findOneBy(['tag' => 'coc']);
     }
 
-    public function preUpdate(Security $security): void
+    public function preUpdate(Security $security, MinigameRepository $minigameRepository): void
     {
         $this->updatedAt = new \DateTimeImmutable();
         $this->lastUpdater = $security->getUser();
+        $this->minigame = $minigameRepository->findOneBy(['tag' => 'coc']);
     }
 
     public function getId(): ?int
@@ -221,6 +229,18 @@ class FunCityName
     public function removeRegion(Region $region): self
     {
         $this->regions->removeElement($region);
+
+        return $this;
+    }
+
+    public function getMinigame(): ?Minigame
+    {
+        return $this->minigame;
+    }
+
+    public function setMinigame(?Minigame $minigame): self
+    {
+        $this->minigame = $minigame;
 
         return $this;
     }

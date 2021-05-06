@@ -126,6 +126,14 @@ class Region
         return $val;
     }
 
+    public function getNbrFunCityName() {
+        $val = 0;
+        foreach ($this->funCityNames as $value) {
+            $val++;
+        }
+        return $val;
+    }
+
     /**
      * @return Collection|FunCityName[]
      */
