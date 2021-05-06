@@ -193,13 +193,13 @@ class FunCityName
         return $this;
     }
 
-    // public function getRegionName() {
-    //     $regions = array();
-    //     foreach ($this->region as $value) {
-    //         $regions[] = $value->getName();
-    //     }
-    //     return implode(",", $regions);
-    // }
+    public function getRegionName() {
+        $regions = array();
+        foreach ($this->regions as $value) {
+            $regions[] = $value->getName();
+        }
+        return implode(",", $regions);
+    }
 
     /**
      * @return Collection|Region[]
