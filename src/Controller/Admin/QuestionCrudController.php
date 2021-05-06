@@ -44,6 +44,7 @@ class QuestionCrudController extends AbstractCrudController
             ImageField::new('image')->hideOnForm()->setBasePath($this->params->get('app.path.question_images')),
             Field::new('answers')->setLabel('Réponses')->setHelp('(mettez un $ devant la ou les bonnes réponses. Pas besoin pour les questions de types "La majorité l\'emporte")')->hideOnIndex(),
             Field::new('answerSetted')->setLabel('$ setted')->hideOnForm(),
+            Field::new('description')->setLabel('Petite explication ?')->hideOnIndex(),
             AssociationField::new('minigame')->setLabel('Epreuve'),
             AssociationField::new('region')->setLabel('Region associée')->onlyOnForms(),
             Field::new('RegionName')->setLabel('Region associée')->hideOnForm(),
