@@ -12,6 +12,7 @@ use App\Entity\User;
 use App\Entity\Region;
 use App\Entity\Minigame;
 use App\Entity\Question;
+use App\Entity\FunCityName;
 
 use App\Service\DateService;
 
@@ -59,6 +60,7 @@ class DashboardController extends AbstractDashboardController
 
         yield MenuItem::section('Type de jeu');
         yield MenuItem::linkToCrud('Question', 'fas fa-question', Question::class);
+        yield MenuItem::linkToCrud('Patelins', 'fas fa-tractor', FunCityName::class);
 
         yield MenuItem::section('Pour ne plus demander ;)');
         yield MenuItem::linkToUrl('BB Collab', 'fas fa-school', 'https://dmii.link/bb');

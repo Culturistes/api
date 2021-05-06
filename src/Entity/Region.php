@@ -34,9 +34,15 @@ class Region
      */
     private $questions;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=FunCityName::class, mappedBy="regions")
+     */
+    private $funCityNames;
+
     public function __construct()
     {
         $this->questions = new ArrayCollection();
+        $this->funCityNames = new ArrayCollection();
     }
 
     public function __toString()
@@ -118,5 +124,32 @@ class Region
             }
         }
         return $val;
+    }
+
+    /**
+     * @return Collection|FunCityName[]
+     */
+    public function getFunCityNames(): Collection
+    {
+        return $this->funCityNames;
+    }
+
+    public function addFunCityName(FunCityName $funCityName): self
+    {
+        if (!$this->funCityNames->contains($funCityName)) {
+            $this->funCityNames[] = $funCityName;
+            $funCityName->addRegion($this);
+        }
+
+        return $this;
+    }
+
+    public function removeFunCityName(FunCityName $funCityName): self
+    {
+        if ($this->funCityNames->removeElement($funCityName)) {
+            $funCityName->removeRegion($this);
+        }
+
+        return $this;
     }
 }
