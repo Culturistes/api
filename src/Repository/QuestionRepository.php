@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Question;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use DoctrineExtensions\Query\Mysql\Rand;
 
 /**
  * @method Question|null find($id, $lockMode = null, $lockVersion = null)
@@ -17,6 +18,25 @@ class QuestionRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Question::class);
+    }
+
+    /**
+    * @return Question[] Returns an array of Question objects
+    */
+    
+    public function findRandomQuestions($tag, $number)
+    {
+        return $this
+            ->createQueryBuilder('q')
+            ->join('q.minigame', 'm')
+            ->andWhere('m.tag = :tag')
+            ->andWhere('q.active = true')
+            ->setParameter('tag', $tag)
+            ->orderBy('RAND()')
+            ->setMaxResults($number)
+            ->getQuery()
+            ->getResult()
+        ;
     }
 
     // /**

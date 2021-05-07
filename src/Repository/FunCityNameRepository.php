@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\FunCityName;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use DoctrineExtensions\Query\Mysql\Rand;
 
 /**
  * @method FunCityName|null find($id, $lockMode = null, $lockVersion = null)
@@ -17,6 +18,23 @@ class FunCityNameRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, FunCityName::class);
+    }
+
+    /**
+    * @return FunCityName[] Returns an array of FunCityName objects
+    */
+    
+    public function findRandomFunCityName($number)
+    {
+        return $this
+            ->createQueryBuilder('f')
+            ->join('f.minigame', 'm')
+            ->andWhere('f.active = true')
+            ->orderBy('RAND()')
+            ->setMaxResults($number)
+            ->getQuery()
+            ->getResult()
+        ;
     }
 
     // /**

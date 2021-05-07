@@ -6,6 +6,7 @@ use App\Repository\MinigameRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 /**
  * @ORM\Entity(repositoryClass=MinigameRepository::class)
@@ -31,6 +32,7 @@ class Minigame
 
     /**
      * @ORM\OneToMany(targetEntity=Question::class, mappedBy="minigame")
+     * @MaxDepth(1)
      */
     private $questions;
 
