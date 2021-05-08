@@ -27,4 +27,22 @@ Configure database URL in your .env.local file
 
 [https://api.culturiste.remiruc.fr/](https://api.culturiste.remiruc.fr/)
 
+### Deployment
+
+To deploy this project in prod
+
+1. pull the project
+```bash
+  git pull
+```
+2. Also : If new dependencies installed
+```bash
+  composer install
+```
+
+3. Also : If database modified
+```bash
+  php bin/console doctrine:migration:migrate
+```
+
   
