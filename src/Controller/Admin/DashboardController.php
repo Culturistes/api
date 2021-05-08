@@ -40,7 +40,6 @@ class DashboardController extends AbstractDashboardController
         return $this->render('admin/dashboard.html.twig', [
             'user' => $this->getUser(),
             'dates' => $this->dateService->getDates(),
-
         ]);
     }
 
@@ -65,6 +64,12 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::section('Pour ne plus demander ;)');
         yield MenuItem::linkToUrl('BB Collab', 'fas fa-school', 'https://dmii.link/bb');
         yield MenuItem::linkToUrl('Figma', 'fab fa-figma', 'https://www.figma.com/file/htz8pSKy3D4ZJrlM00XYOO/Untitled?node-id=0%3A1');
+
+        if ($this->isGranted('ROLE_DEV')) {
+            yield MenuItem::section('Pour les devs');
+            yield MenuItem::linkToUrl('Github culturistes', 'fab fa-github', 'https://github.com/Culturistes');
+            yield MenuItem::linkToUrl('API Github wiki', 'fas fa-cogs', 'https://github.com/Culturistes/api/wiki');
+        }
 
         yield MenuItem::section('Oim');
         if ($this->isGranted('ROLE_REMI')) {
