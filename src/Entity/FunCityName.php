@@ -74,9 +74,9 @@ class FunCityName
     private $minigame;
 
     /**
-     * @ORM\Column(type="text", nullable=true)
+     * @ORM\Column(type="integer", nullable=true)
      */
-    private $description;
+    private $population;
 
     public function __construct()
     {
@@ -250,14 +250,14 @@ class FunCityName
         return $this;
     }
 
-    public function getDescription(): ?string
+    public function getPopulation(): ?int
     {
-        return $this->description;
+        return $this->population;
     }
 
-    public function setDescription(?string $description): self
+    public function setPopulation(?int $population): self
     {
-        $this->description = $description;
+        $this->population = $population;
 
         return $this;
     }
