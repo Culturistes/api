@@ -36,7 +36,7 @@ class FunCityNameCrudController extends AbstractCrudController
             Field::new('longitude')->setLabel('Longitude')->setFormTypeOptions([
                 'block_name' => 'custom',
             ]),
-            Field::new('population')->setLabel('Nombre d\'habitans')->hideOnIndex(),
+            Field::new('gentile')->setLabel('Gentilé')->hideOnIndex(),
             AssociationField::new('regions')->setLabel('Region associée')->onlyOnForms(),
             Field::new('RegionName')->setLabel('Region associée')->hideOnForm(),
             Field::new('active')->setHelp('Permet de désactiver une question, décocher pour l\'empêcher d\'apparaitre dans le jeu sans la supprimer'),
