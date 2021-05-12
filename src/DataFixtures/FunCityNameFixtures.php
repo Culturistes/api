@@ -59,7 +59,8 @@
                     
             
                     // Gentilé
-                    $funCityName->setGentile($data[1]);
+                    $funCityName->setGentileM($data[1]);
+                    $funCityName->setGentileF($data[2]);
 
                     $manager->persist($funCityName);
                 }

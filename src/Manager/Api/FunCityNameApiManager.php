@@ -25,7 +25,7 @@ class FunCityNameApiManager
         // Vérifie si on a le nombre de questions retournées est bien le même que celui demandé
         if (count($results) == $number) {
             $jsonContent = $this->serializer->serialize($results, 'json', [
-                AbstractNormalizer::ATTRIBUTES => ['name', 'latitude', 'longitude', 'gentile']
+                AbstractNormalizer::ATTRIBUTES => ['name', 'latitude', 'longitude', 'gentileM', 'gentileF']
             ]);
     
             return $jsonContent;

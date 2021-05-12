@@ -1,93 +1,78 @@
-Ville,nom habitants/gentillé,
-Andouillé (Pays de la Loire),"Andolléens, Andolléennes",
-Angoisse (Dordogne),"Angoissais, Angoissaises",
-Arnac-la-Poste (Haute-Vienne),les Arnacois,
-Ballots (Mayenne),"Balloçais, Balloçaises",
-Barbières (Auvergne Rhône Alpes),Barbiérois,
-beaufou (vendée),Meillerets,commune
-Bellebrune (pas de calais),"Bellebrunois, Bellebrunoises",
-Belleherbe (Doubs),,
-Bey (ain),Beydouins,
-Bibiche (moselle),"Bibichois, Bibichoises",
-Biches (Bourgogne Franche comté),"Bichois, Bichoises",
-Bidon (ardèche),Bidonais et les Bidonaises,
-Bitche (Moselle),"Bitchois, Bitchoises",
-Bouc-Étourdi (Yvelines),,
-bougon (deux sèvres),"Bougonais, Bougonaises",
-Bourgougnague (lot et garonne),	Bourgougnaguais,
-Bourré (Loir-et-Cher),Bourrichons et Bourrichones.,
-Bouzillé (Maine et Loire),	Buzilliacéens,
-Bû (eure et loire),Buxois,
-Casanova (corse),,
-Cassaniouze (cantal),,
-Chantemerle-sur-la-soie (charente maritime),Chantemerlois et les Chantemerloises.,
-Chantilly (Oise),"Cantiliens, Cantiliennes",
-Cité de Froidcul (Moselle),"	un froiducu, une froiducue",
-clochemerle (rhone),Clochemerlins,
-Corps-Nuds (Ille-et-Vilaine),Cornusiens et les Cornusiennes.,
-coubisou (aveyron),Coubisouhels,
-cucugnan (aude),Cucugnanais,
-cudos (gironde),Cudossais,
-Éclairés (Marne),,
-Folles (haute vienne),Follois,
-Fraize (Vosges),Fraxiniens,
-Glaire (Ardennes ),	Glairois,
-Gland (Aisne),	Les Glandois,
-Glandage (Drôme),"Glandageois, Glandageoises",
-grateloup (aude et garonne),	Grateloupais,
-Hébécrevon (Manche),"Hébécrevonnais, Hebecrevonnaises",
-Hermes (oise),"	Hermois, Hermoises",
-Joyeux (ain),"	Joliacois, Joliacoises",
-La Bénisson-Dieu (Loire),"Bayerots, Bayerottes",
-La Chambre (Savoie),"Chambrains, Chambrainches",
-La Force (Dordogne),"	Forcelais, Forcelaises",
-La morte (Isère),"	Mortillons, Mortillonnes",
-La Tombe (Seine-et-Marne),"Tombiers, Tombières",
-La Ziza (Haute-Savoie),,
-Laboule (Ardèche),"Boularains, Boularaines",
-Lac des rouges truites (Jura),,
-Latronche / La tronche (corrèze / isère), les Tronchois(e)s.,
-Le bonhomme (Alsace),Bonhommiens et les Bonhommiennes.,
-Le quiou (bretagne),"Quiousiens, Quiousiennes",
-Longcochon (Jura),"Couchetards, Couchetardes",
-Marans (charente maritime),"	Marandais, Marandaises",
-Mariol (allier),"Mariolais, Mariolaises",
-Mercy (auvergne rhone alpes),"	Mercycois, Mercycoises",
-Moncrabeau ( lot et garonne),"Moncrabelais, Moncrabelaises",
-Montcuq (Lot),Montculotais,
-Monteton (Lot-et-Garonne),"	Montenais, Montenaises",
-Mouais (Loire-Atlantique),"	Mouaisiens, Mouaisiennes",
-Nouvoitou (bretagne),"Nouvoitouciens, Nouvoitouciennes",
-ollé (centre val de loire),"	Ollésiens, Ollésiennes",
-Onnion (auvergne rhone alpes),"Onnionais, Onnionaises",
-Oô (occitanie),"Onésiens, Onésiennes",
-Oust (Ariège),"	Oustois, Oustoises",
-pisse-en-l'air (réunion),,lieu-dit
-pleure (jura),"	Pleurois, Pleuroises",
-Plumaudan (bretagne),"Plumaudannais, Plumaudannaise",
-Plurien (Côtes-d’Armor),"Pluriennais, Pluriennaises",
-Poil (Nièvre),"Pixiens, Pixiennes ou Poilus, Poilues",
-Rue (Somme),"	Ruens, Ruennes",
-rye (jura),,
-saint barbant (haute vienne),Saint-Barbanteaux.,
-saint pompon (dordogne),Saint-Pomponnais et les Saint-Pomponnaises,
-saint-arnac (pyrénées orientales),"Saint-Arnacois, Saint-Arnacoises",
-Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson (Marne),Bouzemontois,
-Salau (Ariège),,
-Saligos (Hautes-Pyrénées),"	Saligosiens, Saligosienne",
-Sallespisse (Pyrénées-Atlantiques),"Sallespissiens, Sallespissiennes",
-simplé (mayenne),	Simpléen,
-Sixt-Fer-à-Cheval (haute savoie),"Sizerets, Sizères",
-Sommeilles (Meuse),,
-Tendon (Vosges),Todas,
-Trécon (marne),"Tréconniers, Tréconnières",
-uz (occitanie),/,
-vatan (indre),"Vatanais, Vatanaises",
-vieillevie (cantal),/,
-Villeny (Loir & Cher),"Niovilliens, Niovilliennes",
-Vinsobres (drome),"Vinsobrais, Vinsobraises",
-Virginy (Marne),"Virginiens, Virginiennes",
-Y (Somme),Ypsiloniens et Ypsiloniennes,
-yutz (moselle),/,
-Zoza (Corse),"Zozais, Zozaises",
-Paimpont,"Paimpontais, Paimpontaises",
+VILLES,HABITANTS (H),HABITANTS (F)
+Andouillé (Pays de la Loire),Andolléens,Andolléennes
+Angoisse (Dordogne),Angoissais,Angoissaises
+Arnac-la-Poste (Haute-Vienne),Arnacois,Arnacoise
+Ballots (Mayenne),Balloçais,Balloçaises
+Barbières (Auvergne Rhône Alpes),Barbiérois,Barbiéroise
+Bellebrune (Pas de Calais),Bellebrunois,Bellebrunoises
+Bey (Ain),Beydouins,Beydouins
+Bibiche (Moselle),Bibichois,Bibichoises
+Biches (Bourgogne-Franche-Comté),Bichois,Bichoises
+Bidon (Ardèche),Bidonais,Bidonaises
+Bitche (Moselle),Bitchois,Bitchoises
+Bougon (Deux Sèvres),Bougonais,Bougonaises
+Bourgougnague (Lot-et-Garonne),Bourgougnaguais,Bourgougnaguaise
+Bourré (Loir-et-Cher),Bourrichons,Bourrichones
+Bouzillé (Maine et Loire),Buzilliacéens,Buzilliacéennes
+Bû (Eure-et-Loir),Buxois,Buxoises
+Chantemerle-sur-la-Soie (Charente-Maritime),Chantemerlois,Chantemerloises
+Chantilly (Oise),Cantiliens,Cantiliennes
+Clochemerle (Rhône),Clochemerlins,Clochemerlins
+Corps-Nuds (Ille-et-Vilaine),Cornusiens,Cornusiennes
+Coubisou (Aveyron),Coubisouhels,Coubisouhels
+Cucugnan (Aude),Cucugnanais,Cucugnanaises
+Cudos (Gironde),Cudossais,Cudossaises
+Folles (Haute-Vienne),Follois,Follaises
+Fraize (Vosges),Fraxiniens,Fraxiniennes
+Glaire (Ardennes),Glairois,Glairoise
+Gland (Aisne),Glamois,Glamoise
+Glandage (Drôme),Glandageois,Glandageoises
+Grateloup (Aude-Garonne),Grateloupais,Grateloupaises
+Hébécrevon (Manche),Hébécrevonnais,Hebecrevonnaises
+Hermes (Oise),Hermois,Hermoises
+Joyeux (Ain),Joliacois,Joliacoises
+La Bénisson-Dieu (Loire),Bayerots,Bayerottes
+La Chambre (Savoie),Chambrains,Chambrainches
+La Force (Dordogne),Forcelais,Forcelaises
+La Morte (Isère),Mortillons,Mortillonnes
+La Tombe (Seine-et-Marne),Tombiers,Tombières
+Laboule (Ardèche),Boularains,Boularaines
+Boularaines (Isère),Tronchois,Tronchoise
+Le Bonhomme (Alsace),Bonhommiens,Bonhommiennes
+Le Quiou (Bretagne),Quiousiens,Quiousiennes
+Longcochon (Jura),Couchetards,Couchetardes
+Marans (Charente-Maritime),Marandais,Marandaises
+Mariol (Allier),Mariolais,Mariolaises
+Mercy (Auvergne-Rhône-Alpes),Mercycois,Mercycoises
+Moncrabeau (Lot-et-Garonne),Moncrabelais,Moncrabelaises
+Montcuq (Lot-et-Garonne),Les Montcuquois,Les Montcuquoise
+Monteton (Lot-et-Garonne),Montenais,Montenaises
+Mouais (Loire-Atlantique),Mouaisiens,Mouaisiennes
+Nouvoitou (Bretagne),Nouvoitouciens,Nouvoitouciennes
+Ollé (Centre-Val de Loire),Ollésiens,Ollésiennes
+Onnion (Auvergne-Rhône-Alpes),Onnionais,Onnionaises
+Oô (Occitanie),Onésiens,Onésiennes
+Oust (Ariège),Oustois,Oustoises
+Paimpont (Bretagne),Paimpontais,Paimpontaises
+Pleure (Jura),Pleurois,Pleuroises
+Plumaudan (Bretagne),Plumaudannais,Plumaudannaise
+Plurien (Côtes-d’Armor),Pluriennais,Pluriennaises
+Poil (Nièvre),Pixiens / Poilus,Pixiennes / Poilues
+Rue (Somme),Ruens,Ruennes
+Saint-Barbant (Haute-Vienne),Saint-Barbanteaux,Saint-Barbanteaux
+Saint-Pompont (Dordogne),Saint-Pomponnais,Saint-Pomponnaises
+Saint-Arnac (Pyrénées-Orientales),Saint-Arnacois,Saint-Arnacoises
+Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson (Marne),Bouzemontois,Bouzemontoise
+Saligos (Hautes-Pyrénées),Saligosiens,Saligosienne
+Sallespisse (Pyrénées-Atlantiques),Sallespissiens,Sallespissiennes
+Simplé (Mayenne),Simpléen,Simpléennes
+Sixt-Fer-à-Cheval (Haute-Savoie),Sizerets,Sizères
+Tendon (Vosges),Todas,Todas
+Tonnerre (Bourgogne-Franche-Comté),Tonnerrois,Tonnerroises
+Trécon (marne),Tréconniers,Tréconnières
+Vatan (Indre),Vatanais,Vatanaises
+Villeny (Loir & Cher),Niovilliens,Niovilliennes
+Vinsobres (Drôme),Vinsobrais,Vinsobraises
+Virginy (Marne),Virginiens,Virginiennes
+Y (Somme),Ypsiloniens,Ypsiloniennes
+Zoza (Corse),Zozais,Zozaises

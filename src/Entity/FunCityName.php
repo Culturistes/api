@@ -76,7 +76,12 @@ class FunCityName
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $gentile;
+    private $gentileM;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $gentileF;
 
     public function __construct()
     {
@@ -250,14 +255,26 @@ class FunCityName
         return $this;
     }
 
-    public function getGentile(): ?string
+    public function getGentileM(): ?string
     {
-        return $this->gentile;
+        return $this->gentileM;
     }
 
-    public function setGentile(?string $gentile): self
+    public function setGentileM(?string $gentileM): self
     {
-        $this->gentile = $gentile;
+        $this->gentileM = $gentileM;
+
+        return $this;
+    }
+
+    public function getGentileF(): ?string
+    {
+        return $this->gentileF;
+    }
+
+    public function setGentileF(?string $gentileF): self
+    {
+        $this->gentileF = $gentileF;
 
         return $this;
     }
