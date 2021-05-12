@@ -61,7 +61,7 @@ class FunCityNameCrudController extends AbstractCrudController
             href="https://unpkg.com/leaflet-geosearch@3.2.1/dist/geosearch.css"
           />')
           ->addHtmlContentToHead('<script src="https://unpkg.com/leaflet-geosearch@3.2.1/dist/geosearch.umd.js"></script>')
-            ->addJsFile('js/map.js')
+            ->addHtmlContentToBody('<script src="js/map.js"></script>')
         ;
     }
 }
