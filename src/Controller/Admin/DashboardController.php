@@ -36,7 +36,6 @@ class DashboardController extends AbstractDashboardController
      */
     public function index(): Response
     {
-
         return $this->render('admin/dashboard.html.twig', [
             'user' => $this->getUser(),
             'dates' => $this->dateService->getDates(),
