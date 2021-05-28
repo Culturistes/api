@@ -88,6 +88,11 @@ class Question
      */
     private $description;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="questions")
+     */
+    private $category;
+
     public function __construct()
     {
         $this->region = new ArrayCollection();
@@ -271,7 +276,7 @@ class Question
     }
 
     public function getAnswerSetted() {
-        if ($this->minigame->getTag() == 'quiz') {
+        if ($this->minigame && $this->minigame->getTag() == 'quiz') {
             $answers = $this->answers;
             $answerSetted = false;
     
@@ -295,6 +300,18 @@ class Question
     public function setDescription(?string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }

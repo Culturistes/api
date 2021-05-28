@@ -11,6 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\User;
 use App\Entity\Region;
 use App\Entity\Minigame;
+use App\Entity\Category;
 use App\Entity\Question;
 use App\Entity\FunCityName;
 
@@ -55,6 +56,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::section('Infos générales du jeu');
         yield MenuItem::linkToCrud('Region', 'fas fa-atlas', Region::class);
         yield MenuItem::linkToCrud('Epreuve', 'fas fa-gamepad', Minigame::class);
+        yield MenuItem::linkToCrud('Categories', 'fas fa-bookmark', Category::class);
 
         yield MenuItem::section('Type de jeu');
         yield MenuItem::linkToCrud('Question', 'fas fa-question', Question::class);
@@ -74,7 +76,7 @@ class DashboardController extends AbstractDashboardController
         if ($this->isGranted('ROLE_REMI')) {
             yield MenuItem::linkToCrud('Utilisateur', 'fas fa-user', User::class);
         }
-        yield MenuItem::linkToRoute('Changer mot de passe', 'fas fa-user', 'admin_me_password');
+        yield MenuItem::linkToRoute('Changer mot de passe', 'fas fa-key', 'admin_me_password');
         yield MenuItem::linkToLogout('Se déconnecter', 'fas fa-sign-out-alt');
     }
 }

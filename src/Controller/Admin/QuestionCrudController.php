@@ -48,6 +48,7 @@ class QuestionCrudController extends AbstractCrudController
             AssociationField::new('minigame')->setLabel('Epreuve'),
             AssociationField::new('region')->setLabel('Region associée')->onlyOnForms(),
             Field::new('RegionName')->setLabel('Region associée')->hideOnForm(),
+            AssociationField::new('category')->setLabel('Categorie'),
             Field::new('active')->setHelp('Permet de désactiver une question, décocher pour l\'empêcher d\'apparaitre dans le jeu sans la supprimer'),
             AssociationField::new('creator')->hideOnForm()->hideOnIndex(),
             Field::new('createdAt')->hideOnForm()->hideOnIndex(),
