@@ -22,7 +22,7 @@ class QuestionApiManager
     {
         $results = $this->questionRepository->findRandomQuestions($tag, $number);
 
-        // Vérifie si on a le nombre de questions retournées est bien le même que celui demandé
+        // Vérifie le nombre de questions retournées est bien le même que celui demandé
         if (count($results) == $number) {
             $jsonContent = $this->serializer->serialize($results, 'json', [
                 AbstractNormalizer::ATTRIBUTES => ['title', 'answers', 'description']

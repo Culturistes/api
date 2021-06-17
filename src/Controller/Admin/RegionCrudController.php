@@ -29,6 +29,7 @@ class RegionCrudController extends AbstractCrudController
     {
         return $crud
                 ->setDefaultSort(['name' => 'ASC'])
+                ->setPaginatorPageSize(18)
         ;
     }
 

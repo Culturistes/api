@@ -1,0 +1,79 @@
+REGIONS,MOT À TROUVER,BONNE REPONSE,FAUX MOT 1,FAUX MOT 2,FAUX MOT 3
+Auvergne-Rhône-Alpes,BABU,Épouvantail,Barbier,Barbe à papa,Shampoing
+Auvergne-Rhône-Alpes,GOYARDE,Hache,Fromage,Yaourt,Goyave
+Auvergne-Rhône-Alpes,MILLIARD,Clafoutis,Argent,Miel,Céréale
+Auvergne-Rhône-Alpes,MIRON,Chat,Châtaigne,Miroir,Rond-point
+Auvergne-Rhône-Alpes,BARABANS,Pissenlit,Pirate,Chevalier,Accrobranche
+Auvergne-Rhône-Alpes,MONCHU,Touriste,Enfant,Montagne,Sans-abri
+Auvergne-Rhône-Alpes,DIOT,Saucisse,Lampe,Litière,Dictionnaire
+Auvergne-Rhône-Alpes,BUJADE,Lessive,Carafe d'eau,Orchidée,Seau
+Auvergne-Rhône-Alpes,PEUF,Neige,Fête,Pneu,Drogue
+Auvergne-Rhône-Alpes,PADELLE,Poêle à frire,Papillon,Pédalo,Paddle
+,,,,,
+Bourgogne-Franche-Comté,PIVE,Pomme de pain,Oiseau,Nez,Balance
+Bourgogne-Franche-Comté,RABASSE,Averse,Fossé,Amende,Réduction
+Bourgogne-Franche-Comté,DÉCHARBOUILLER,Se laver le visage,Faire un barbecue,Faire bouillir de l'eau,Faire du char à voile
+Bourgogne-Franche-Comté,FOUILLÈRE,Feu en plein air,Fougère,Fourmillière,Foule
+,,,,,
+Bretagne,BOUINER,Glander,Pleuvoir,Pleurer,Aboyer
+Bretagne,POUCAVER,Dénoncer,Rigoler,Voler,Perdre
+Bretagne,PICOUSSE,Caca d'oeil,Pissenlit,Ortie,Tremblement
+Bretagne,CUCHE,Queue de cheval,Carafe d'eau,Ruche,Quiche
+,,,,,
+Centre-Val de Loire,CHOPINE,Petite bouteille de vin,Amie,Violiste,Bandoulière
+Centre-Val de Loire,BIGNER,Cogner,Tremper,Bizuter,Biaiser
+Centre-Val de Loire,GOULE,Goule,Visage,Cou,Genou
+Centre-Val de Loire,MOUFLET,Enfant,Moufle,Dépliant,Couverture
+,,,,,
+Corse,PINZUTU,Français,Pomme de terre,Poële,Plante verte
+Corse,BASGI,Bisou,Bagage,Bagarre,Pantalon
+Corse,PAGHJELLA,Chant,Dispute,Paëlla,Pagaille
+Corse,CORSITE,Pierre rare,Chute d'eau,Vallée,Écorce d'arbre
+,,,,,
+Grand-Est,NAREUX,Dégout,Livre,Bébé,Verrue
+Grand-Est,BRIMBELLE,Myrtille,Parapluie,Culotte,Fille
+Grand-Est,CLIFER,Éclabousser,Éternuer,Griffer,Agrafer
+Grand-Est,S’ACCOUVER,S'accroupir,Être au lit,Accoucher,S'accoupler
+Grand-Est,CATHERINETTE,Coccinelle,Chapeau,Bonne-soeur,Princesse
+Grand-Est,SCHNOUGEL,Morve,Gel douche,Aspirateur,Micro-onde
+,,,,,
+Hauts-de-France,BRAIRE,Pleurer,Traire,Tartiner,Bavarder
+Hauts-de-France,GUERNOULLE,Grenouille,Gargouille,Bouche d'égout,Mouche
+Hauts-de-France,WASSINGUE,Serpillière,Seringue,Moustique,Araignée
+Hauts-de-France,CAIELLE,Chaise,Pelle,Viande,Caillou
+Hauts-de-France,DRACHE,Pluie,Crachat,Plastique,Nappe
+Hauts-de-France,DUCASSE,Kermesse,Canard,Cuisinier,Duchesse
+Hauts-de-France,CHICON,Endive,Dent,Bière,Chicorée
+,,,,,
+Île-de-France,GOUALEUSE,Chanteuse,Pomme de terre,Caissière,Lave-linge
+Île-de-France,PETEUX,Haricots,Pet,Putois,Station d'épuration
+Île-de-France,BÉLANT,Mouton,Chapeau,Bavoir,Rideau
+Île-de-France,BLAFARDE,Lune,Plateau,Neige,Malade
+,,,,,
+Normandie,TANCARVILLE,Étendoir,Panneau de signalisation,Costume,Fête de village
+Normandie,CALENDOS,Camembert,Calendrier,Montre,Agenda
+Normandie,MALARD,Canard,Lardon,Matelas,Hamac
+,,,,,
+Nouvelle-Aquitaine,CAGOUILLE,Escargot,Cagoule,Grenouille,Bêtise
+Nouvelle-Aquitaine,URDIN,Bleu,Ustensile de cuisine,Moisissure,Citadin
+Nouvelle-Aquitaine,HORTZ,Dent,Voiture,Cheval,Hôtel
+Nouvelle-Aquitaine,LAINO,Nuage,Pull,Tissu,Lait
+Nouvelle-Aquitaine,ARRAIN,Poisson,Rein,Arène,Parrain
+,,,,,
+Occitanie,CASTET,Château,Poney,Accident,Casque
+Occitanie,RÈCHE,Chute,Mèche,Pente,Éponge
+Occitanie,MIRGUE,Souris,Marmite,Épingle,Pâtisserie
+,,,,,
+Pays de la Loire,JAILLE,Déchetterie,Prison,Jardin,Librairie
+Pays de la Loire,CRÉBILLONNER,Faire du shopping,Griffonner,S'énerver,Grimacer
+Pays de la Loire,BOURRIER,Poussière,Cheval,Horloge,Selle
+,,,,,
+Provence-Alpes-Côte d'Azur,FADA,Fou,Figue,Fleur,Foulard
+Provence-Alpes-Côte d'Azur,CLOVISSE,Palourde,Roi,Crustacé,Vis
+Provence-Alpes-Côte d'Azur,CHOURAVER,Voler,Planter des choux,Tondre la pelouse,Tailler une haie
+Provence-Alpes-Côte d'Azur,PASTAGA,Pastis,Pâtes,Bière,Cocktail
+,,,,,
+Guyane,AWARA,Fruit,Carnaval,Bague,Sorcière
+Guyane,CARBET,Hutte en bois,Cabaret,Carrelage,Carnet de notes
+Guyane,MATOUTOU,Araignée,Plaide,Chien,Chaton
+Guyane,MADRAS,Tissu,Matelas,Manteau,Sauce épicée
