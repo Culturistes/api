@@ -24,11 +24,11 @@ class BonneFranquetteApiManager
             $jsonContent =
 '
 {
-  "Name": "",
-  "PossibleIngredients": [
+  "name": "",
+  "possibleIngredients": [
     { "name": "Carotte", "img": "#ff0000" }
   ],
-  "Ingredients": [
+  "ingredients": [
     { "name": "Carotte", "img": "#ff0000", "caught": false }
   ]
 }
