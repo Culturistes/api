@@ -6,6 +6,7 @@ use App\Repository\FunCityNameRepository;
 use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Serializer\Normalizer\AbstractNormalizer;
+use Doctrine\Common\Collections\ArrayCollection;
 
 class BonneFranquetteApiManager
 {
@@ -20,7 +21,6 @@ class BonneFranquetteApiManager
 
     public function getQuestions($number)
     {
-
             $jsonContent =
 '
 {
@@ -34,7 +34,18 @@ class BonneFranquetteApiManager
 }
 ';
 
-            return $jsonContent;
+$finalString = '[';
+
+for ($i=0; $i < $number; $i++) { 
+    $finalString = $finalString . $jsonContent;
+    if ($i < $number - 1) {
+        $finalString = $finalString . ',';
+    }
+}
+
+$finalString = $finalString . ']';
+dump($finalString);
+            return $finalString;
 
     }
 }
