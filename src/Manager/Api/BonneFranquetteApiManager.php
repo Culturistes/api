@@ -44,7 +44,6 @@ for ($i=0; $i < $number; $i++) {
 }
 
 $finalString = $finalString . ']';
-dump($finalString);
             return $finalString;
 
     }
