@@ -26,19 +26,20 @@ class BonneFranquetteApiManager
 {
   "name": "Ti-punch",
   "possibleIngredients": [
-    { "name": "Rhum blanc", "img": "rbl" },
-    { "name": "Citron vert", "img": "ctv" },
-    { "name": "Cognac", "img": "cog" },
-    { "name": "Citron jaune", "img": "ctj" },
-    { "name": "Gingembre", "img": "gin" },
-    { "name": "Orange", "img": "ora" },
-    { "name": "Ananas", "img": "ana" },
-    { "name": "Menthe", "img": "men" }
+    { "name": "Rhum blanc", "img": "rhum" },
+    { "name": "Citron vert", "img": "citron_vert" },
+    { "name": "Sirop de sucre de canne", "img": "sucre_de_canne" }
+    { "name": "Cognac", "img": "cognac" },
+    { "name": "Citron jaune", "img": "citron_jaune" },
+    { "name": "Gingembre", "img": "gingembre" },
+    { "name": "Orange", "img": "orange" },
+    { "name": "Ananas", "img": "ananas" },
+    { "name": "Menthe", "img": "menthe" }
   ],
   "ingredients": [
-    { "name": "Rhum blanc", "img": "rbl", "caught": false },
-    { "name": "Citron vert", "img": "ctv", "caught": false },
-    { "name": "Sirop de sucre de canne", "img": "sdc", "caught": false }
+    { "name": "Rhum blanc", "img": "rhum", "caught": false },
+    { "name": "Citron vert", "img": "citron_vert", "caught": false },
+    { "name": "Sirop de sucre de canne", "img": "sucre_de_canne", "caught": false }
   ]
 }
 ';
