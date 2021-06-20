@@ -24,12 +24,21 @@ class BonneFranquetteApiManager
             $jsonContent =
 '
 {
-  "name": "",
+  "name": "Ti-punch",
   "possibleIngredients": [
-    { "name": "Carotte", "img": "#ff0000" }
+    { "name": "Rhum blanc", "img": "rbl" },
+    { "name": "Citron vert", "img": "ctv" },
+    { "name": "Cognac", "img": "cog" },
+    { "name": "Citron jaune", "img": "ctj" },
+    { "name": "Gingembre", "img": "gin" },
+    { "name": "Orange", "img": "ora" },
+    { "name": "Ananas", "img": "ana" },
+    { "name": "Menthe", "img": "men" }
   ],
   "ingredients": [
-    { "name": "Carotte", "img": "#ff0000", "caught": false }
+    { "name": "Rhum blanc", "img": "rbl", "caught": false },
+    { "name": "Citron vert", "img": "ctv", "caught": false },
+    { "name": "Sirop de sucre de canne", "img": "sdc", "caught": false }
   ]
 }
 ';
