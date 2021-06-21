@@ -26,15 +26,15 @@ class BonneFranquetteApiManager
 {
   "name": "Ti-punch",
   "possibleIngredients": [
-    { "name": "Rhum blanc", "img": "rhum" },
-    { "name": "Citron vert", "img": "citron_vert" },
-    { "name": "Sirop de sucre de canne", "img": "sucre_de_canne" },
-    { "name": "Cognac", "img": "cognac" },
-    { "name": "Citron jaune", "img": "citron_jaune" },
-    { "name": "Gingembre", "img": "gingembre" },
-    { "name": "Orange", "img": "orange" },
-    { "name": "Ananas", "img": "ananas" },
-    { "name": "Menthe", "img": "menthe" }
+    { "name": "Rhum blanc", "img": "rhum", "isGoodAnswer": true },
+    { "name": "Citron vert", "img": "citron_vert", "isGoodAnswer": true },
+    { "name": "Sirop de sucre de canne", "img": "sucre_de_canne", "isGoodAnswer": true },
+    { "name": "Cognac", "img": "cognac", "isGoodAnswer": false },
+    { "name": "Citron jaune", "img": "citron_jaune", "isGoodAnswer": false },
+    { "name": "Gingembre", "img": "gingembre", "isGoodAnswer": false },
+    { "name": "Orange", "img": "orange", "isGoodAnswer": false },
+    { "name": "Ananas", "img": "ananas", "isGoodAnswer": false },
+    { "name": "Menthe", "img": "menthe", "isGoodAnswer": false }
   ],
   "ingredients": [
     { "name": "Rhum blanc", "img": "rhum", "caught": false },
