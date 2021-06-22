@@ -39,7 +39,7 @@ class BonneFranquetteApiManager
   "ingredients": [
     { "name": "Rhum blanc", "img": "rhum", "caught": false },
     { "name": "Citron vert", "img": "citron_vert", "caught": false },
-    { "name": "Sirop de sucre de canne", "img": "sucre_de_canne", "caught": false }
+    { "name": "Sucre de canne", "img": "sucre_de_canne", "caught": false }
   ]
 }
 ';
@@ -51,8 +51,8 @@ $jsonContent2 =
   "possibleIngredients": [
     { "name": "Haricots blancs", "img": "haricots_blancs", "isGoodAnswer": true },
     { "name": "Jarret de porc", "img": "jarret_de_porc", "isGoodAnswer": true },
-    { "name": "Saucisse de Toulouse", "img": "sucre_de_canne", "isGoodAnswer": true },
-    { "name": "Tomates", "img": "saucisse", "isGoodAnswer": true },
+    { "name": "Saucisse de Toulouse", "img": "saucisse", "isGoodAnswer": true },
+    { "name": "Tomates", "img": "tomate", "isGoodAnswer": true },
     { "name": "Carottes", "img": "carotte", "isGoodAnswer": true },
     { "name": "Céleri", "img": "celeri", "isGoodAnswer": true },
     { "name": "Oignons", "img": "oignon", "isGoodAnswer": true },
@@ -68,8 +68,8 @@ $jsonContent2 =
   "ingredients": [
     { "name": "Haricots blancs", "img": "haricots_blancs", "caught": false },
     { "name": "Jarret de porc", "img": "jarret_de_porc", "caught": false },
-    { "name": "Saucisse de Toulouse", "img": "sucre_de_canne", "caught": false },
-    { "name": "Tomates", "img": "saucisse", "caught": false },
+    { "name": "Saucisse de Toulouse", "img": "saucisse", "caught": false },
+    { "name": "Tomates", "img": "tomates", "caught": false },
     { "name": "Carottes", "img": "carotte", "caught": false },
     { "name": "Céleri", "img": "celeri", "caught": false },
     { "name": "Oignons", "img": "oignon", "caught": false },
