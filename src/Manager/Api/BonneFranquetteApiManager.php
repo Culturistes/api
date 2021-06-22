@@ -69,7 +69,7 @@ $jsonContent2 =
     { "name": "Haricots blancs", "img": "haricots_blancs", "caught": false },
     { "name": "Jarret de porc", "img": "jarret_de_porc", "caught": false },
     { "name": "Saucisse de Toulouse", "img": "saucisse", "caught": false },
-    { "name": "Tomates", "img": "tomates", "caught": false },
+    { "name": "Tomates", "img": "tomate", "caught": false },
     { "name": "Carottes", "img": "carotte", "caught": false },
     { "name": "Céleri", "img": "celeri", "caught": false },
     { "name": "Oignons", "img": "oignon", "caught": false },
