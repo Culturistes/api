@@ -28,7 +28,7 @@ class BonneFranquetteApiManager
   "possibleIngredients": [
     { "name": "Rhum blanc", "img": "rhum", "isGoodAnswer": true },
     { "name": "Citron vert", "img": "citron_vert", "isGoodAnswer": true },
-    { "name": "Sirop de sucre de canne", "img": "sucre_de_canne", "isGoodAnswer": true },
+    { "name": "Sucre de canne", "img": "sucre_de_canne", "isGoodAnswer": true },
     { "name": "Cognac", "img": "cognac", "isGoodAnswer": false },
     { "name": "Citron jaune", "img": "citron_jaune", "isGoodAnswer": false },
     { "name": "Gingembre", "img": "gingembre", "isGoodAnswer": false },
