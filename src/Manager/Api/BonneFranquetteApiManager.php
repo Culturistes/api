@@ -110,6 +110,67 @@ $jsonContent3 =
 }
 ';
 
+$jsonContent4 =
+'
+{
+  "name": "Tapenade",
+  "possibleIngredients": [
+    { "name": "Olives noires", "img": "olives_noires", "isGoodAnswer": true },
+    { "name": "Anchois", "img": "anchois", "isGoodAnswer": true },
+    { "name": "Câpres", "img": "capres", "isGoodAnswer": true },
+    { "name": "Ail", "img": "ail", "isGoodAnswer": true },
+    { "name": "Jus de citron", "img": "citron_jaune", "isGoodAnswer": true },
+    { "name": "Poivre", "img": "poivre", "isGoodAnswer": true },
+    { "name": "Oignon", "img": "oignon", "isGoodAnswer": false },
+    { "name": "Moutarde", "img": "moutarde", "isGoodAnswer": false },
+    { "name": "Mayonnaise", "img": "mayo", "isGoodAnswer": false },
+    { "name": "Cornichon", "img": "cornichon", "isGoodAnswer": false },
+    { "name": "Oeufs", "img": "oeuf", "isGoodAnswer": false }
+  ],
+  "ingredients": [
+    { "name": "Olives noires", "img": "olives_noires", "caught": false },
+    { "name": "Anchois", "img": "anchois", "caught": false },
+    { "name": "Câpres", "img": "capres", "caught": false },
+    { "name": "Ail", "img": "ail", "caught": false },
+    { "name": "Jus de citron", "img": "citron_jaune", "caught": false },
+    { "name": "Poivre", "img": "poivre", "caught": false }
+  ]
+}
+';
+
+$jsonContent5 =
+'
+{
+  "name": "Quiche lorraine",
+  "possibleIngredients": [
+    { "name": "Pâte brisée", "img": "pate_brisee", "caught": true },
+    { "name": "Lardons", "img": "lardons", "caught": true },
+    { "name": "Oeufs", "img": "oeuf", "caught": true },
+    { "name": "Crème fraiche", "img": "creme_fraiche", "caught": true },
+    { "name": "Lait", "img": "lait", "caught": true },
+    { "name": "Poivre", "img": "poivre", "caught": true },
+    { "name": "Sel", "img": "sel", "caught": true },
+    { "name": "Noix de muscade", "img": "noix_de_musucade", "caught": true },
+    { "name": "Gruyère", "img": "gruyere", "isGoodAnswer": false },
+    { "name": "Poireaux", "img": "poireau", "isGoodAnswer": false },
+    { "name": "Saumon", "img": "saumon", "isGoodAnswer": false },
+    { "name": "Tomates", "img": "tomate", "isGoodAnswer": false },
+    { "name": "Oignons", "img": "oignon", "isGoodAnswer": false },
+    { "name": "Moutarde", "img": "moutarde", "isGoodAnswer": false }
+  ],
+  "ingredients": [
+    { "name": "Pâte brisée", "img": "pate_brisee", "caught": false },
+    { "name": "Lardons", "img": "lardons", "caught": false },
+    { "name": "Oeufs", "img": "oeuf", "caught": false },
+    { "name": "Crème fraiche", "img": "creme_fraiche", "caught": false },
+    { "name": "Lait", "img": "lait", "caught": false },
+    { "name": "Poivre", "img": "poivre", "caught": false },
+    { "name": "Sel", "img": "sel", "caught": false },
+    { "name": "Noix de muscade", "img": "noix_de_musucade", "caught": false }
+  ]
+}
+';
+
 $finalString = '[';
 
 for ($i=0; $i < $number; $i++) { 
@@ -119,6 +180,10 @@ for ($i=0; $i < $number; $i++) {
     $finalString = $finalString . $jsonContent2;
   } else if ($i == 2) {
     $finalString = $finalString . $jsonContent3;
+  } else if ($i == 3) {
+    $finalString = $finalString . $jsonContent4;
+  } else if ($i == 4) {
+    $finalString = $finalString . $jsonContent5;
   } else {
     $finalString = $finalString . $jsonContent1;
   }
